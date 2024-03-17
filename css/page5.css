@@ -3,7 +3,6 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    width: 100%;
 }
 
 header {
@@ -24,7 +23,7 @@ header {
 }
 
 table {
-    width: 98%;
+    width: 100%;
     border-collapse: collapse;
     background-color: #fff;
     font-size: 3vh;
@@ -32,7 +31,6 @@ table {
 
 th,
 td {
-    right: 15%;
     padding: 10px;
     border-bottom: 3px solid #B39F9F;
     text-align: left;
