@@ -25,6 +25,7 @@ header {
 
 table {
     width: 98%;
+    margin-right: 5%;
     border-collapse: collapse;
     background-color: #fff;
     font-size: 3vh;
