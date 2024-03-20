@@ -1,0 +1,112 @@
+body {
+    background-color: rgba(70, 7, 7, 0.21);
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.schedule {
+    list-style: none;
+    padding: 0;
+    padding-top: 10%;
+    font-size: 4vh;
+    padding-left: 5%;
+}
+
+.schedule-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.subject {
+    margin-left: 10px;
+}
+
+.teacher {
+    margin-left: 10px;
+    color: #666;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-column img {
+    margin-bottom: 10px;
+    width: 33%;
+    padding-right: 10px;
+}
+
+
+
+header form {
+    display: block;
+    text-align: center;
+    margin-left: 25%;
+    font-size: 4vh;
+    margin-top: 3.5%;
+    margin-right: 35%;
+    border-radius: 20px;
+}
+
+#group {
+    position: absolute;
+    font-size: 3vh;
+    margin-top: 0.2%;
+    margin-left: 2%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #DAD1D1;
+    max-width: 300px;
+    max-height: 70px;
+    border-color: #B39F9F;
+    z-index: 4;
+}
+
+#group:hover {
+    background-color: #B39F9F;
+}
+
+
+.logo {
+    width: 7%;
+    margin-left: 80%;
+    position: absolute;
+    z-index: 3;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header form {
+        margin: 8% auto;
+        font-size: 3vh;
+    }
+
+    #group {
+        position: relative;
+        margin: 5% auto;
+        font-size: 2vh;
+        width: 80%;
+        max-width: 300px;
+        max-height: 70px;
+        border-radius: 20px;
+    }
+
+    .logo {
+        margin-left: 83%;
+    }
+
+}

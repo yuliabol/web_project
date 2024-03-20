@@ -1,0 +1,196 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url("../images/image 3.png");
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: 800;
+    text-align: center;
+    padding-top: 7%;
+}
+
+form {
+    position: absolute;
+    align-items: center;
+    padding-left: 35%;
+    width: 30%;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+input,
+select {
+    background-color: #D9CCCC;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #B39F9F;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button {
+    margin-left: 35%;
+    width: 25%;
+    padding: 5px 10px;
+    background-color: transparent;
+    background-color: #B39F9F;
+    color: black;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s ease;
+    transform: translate(-50%, -50%) rotate(45deg);
+    display: block;
+    z-index: -1;
+    background-color: #7c5757;
+}
+
+button:hover::before {
+    width: 105%;
+}
+
+main section.login form button:hover {
+    background-color: #ddd;
+}
+
+.line {
+    position: absolute;
+    margin-left: 68%;
+    margin-top: 26%;
+    z-index: 2;
+}
+
+.learn-more {
+    position: absolute;
+    z-index: 1;
+    margin-left: 73%;
+    margin-top: 27%;
+}
+
+.website-link {
+    position: absolute;
+    margin-left: 79%;
+    margin-top: 27%;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.website-link:hover {
+    color: #2a0606;
+    text-decoration: underline;
+}
+
+.rect_title {
+    margin-left: 66%;
+    margin-top: 25%;
+    position: absolute;
+}
+
+.logo_college {
+    margin-left: 75%;
+    margin-top: 20%;
+    width: 10%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    transition: transform 1s ease;
+    transform-origin: center;
+}
+
+.logo_college:hover {
+    transform: rotate(360deg);
+    transform-origin: center;
+    z-index: 1;
+}
+
+main {
+    min-height: 100vh;
+}
+
+footer {
+    position: relative;
+    margin-top: 5px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        padding-left: 26%;
+        width: 50%;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input,
+    select {
+        font-size: 16px;
+    }
+
+    button {
+        margin-left: 25%;
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .line {
+        margin-left: 50%;
+        margin-top: 61%;
+        width: 20px;
+    }
+
+    .learn-more {
+        margin-left: 59%;
+        margin-top: 62%;
+    }
+
+    .website-link {
+        margin-left: 59%;
+        margin-top: 65%;
+    }
+
+    .rect_title {
+        margin-left: 50%;
+        margin-top: 60%;
+        height: 8%;
+        width: 350px;
+    }
+
+    .logo_college {
+        margin-left: 70%;
+        margin-top: 60%;
+        width: 20%;
+    }
+
+}

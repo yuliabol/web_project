@@ -1,0 +1,109 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(to bottom, #DAD1D1, #FFFFFF);
+    padding: 70px;
+    text-align: center;
+}
+
+.logo {
+    width: 8%;
+    height: auto;
+    position: absolute;
+    margin-left: 35%;
+}
+
+.container {
+    margin: 40px;
+}
+
+table {
+    width: 98%;
+    border-collapse: collapse;
+    background-color: #fff;
+    font-size: 3vh;
+    margin-right: 10%;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 3px solid #B39F9F;
+    text-align: left;
+}
+
+th {
+    background-color: #e3d1d1;
+}
+
+button {
+    width: 60%;
+    padding: 5px 10px;
+    background-color: transparent;
+    background-color: #B39F9F;
+    color: black;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 2vh;
+}
+
+button:before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s ease;
+    transform: translate(-50%, -50%) rotate(45deg);
+    display: block;
+    z-index: -1;
+    background-color: #7c5757;
+}
+
+button:hover::before {
+    width: 105%;
+}
+
+footer {
+    text-align: center;
+    background-color: #DAD1D1;
+    padding-top: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        padding: 40px;
+    }
+
+    .container {
+        margin: 10px;
+    }
+    
+    table {
+        margin-right: 10%;
+    }
+    
+    th,
+    td {
+        padding: 5px;
+    }
+
+    button {
+        width: 75%;
+    }
+
+}
