@@ -113,6 +113,7 @@ body{
 
 
 .college_div {
+  text-shadow: 4px 4px 5px rgb(158, 130, 142);
   position: absolute;
   display: inline;
   width: 40%;
