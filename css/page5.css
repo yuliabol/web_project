@@ -80,7 +80,7 @@ button:hover::before {
 footer {
     text-align: center;
     background-color: #DAD1D1;
-    padding-top: 10%;
+    padding-top: 7%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -104,6 +104,10 @@ footer {
 
     button {
         width: 75%;
+    }
+
+    footer {
+        font-size: 10px;
     }
 
 }
