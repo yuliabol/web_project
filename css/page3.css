@@ -12,9 +12,9 @@ body {
 .schedule {
     list-style: none;
     padding: 0;
-    padding-top: 10%;
+    padding-top: 7%;
     font-size: 4vh;
-    padding-left: 5%;
+    padding-left: 10%;
 }
 
 .schedule-item {
@@ -99,7 +99,7 @@ footer {
         position: relative;
         margin: 5% auto;
         font-size: 2vh;
-        width: 80%;
+        width: 50%;
         max-width: 300px;
         max-height: 70px;
         border-radius: 20px;
