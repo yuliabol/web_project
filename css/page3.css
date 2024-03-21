@@ -76,6 +76,24 @@ header form {
     background-color: #B39F9F;
 }
 
+.profile{
+    position: absolute;
+    width: 4%;
+    margin-left: 5%;
+    top: 2%;
+}
+
+#profile_settings {
+    border: none;
+    position: absolute;
+    width: 1%;
+    margin-left: 5%;
+    font-size: 2vh;
+    top: 9.5%;
+    background-color: #D7CACA;
+    z-index: 1;
+}
+
 
 .logo {
     width: 7%;
@@ -107,6 +125,11 @@ footer {
 
     .logo {
         margin-left: 83%;
+    }
+
+    #profile_settings {
+        width: 4%;
+        top: 6%;
     }
 
 }
