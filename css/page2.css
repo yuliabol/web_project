@@ -20,6 +20,11 @@ form {
     width: 30%;
 }
 
+p:hover {
+    color: rgb(97, 0, 0);
+    text-decoration: underline;
+}
+
 label {
     display: block;
     font-weight: 600;
