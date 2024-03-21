@@ -12,6 +12,24 @@ header {
     text-align: center;
 }
 
+.profile {
+    position: absolute;
+    width: 4%;
+    top: 2%;
+    left: 5%;
+}
+
+#profile_settings {
+    border: none;
+    position: absolute;
+    width: 1%;
+    font-size: 2vh;
+    top: 9.5%;
+    left: 5%;
+    background-color: #F1EEEE;
+    z-index: 1;
+}
+
 .logo {
     width: 8%;
     height: auto;
