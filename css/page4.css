@@ -12,21 +12,11 @@ html {
     overflow: hidden;
 }
 
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
 .content {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 12%;
 }
 
 h1 {
@@ -39,6 +29,7 @@ form {
     width: 30%;
     padding: 20px;
     border-radius: 20px;
+    border: 1px solid rgb(75, 34, 34);
 }
 
 .form-group {
@@ -50,15 +41,25 @@ label {
     font-weight: 600;
     margin-bottom: 5px;
     text-align: left;
-    font-size: 20px;
+    margin-left: 10%;
+    font-size: 25px;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+p{
+
+    color: #000;
+}
+p:hover {
+    color: rgb(97, 0, 0);
+    text-decoration: underline;
 }
 
 input,
 select {
     background-color: #D9CCCC;
-    width: 100%;
+    width: 80%;
     padding: 5px;
     margin-bottom: 10px;
     border: 1px solid #B39F9F;
@@ -101,15 +102,6 @@ button:hover::before {
     width: 105%;
 }
 
-p{
-
-    color: #000;
-}
-p:hover {
-    color: rgb(97, 0, 0);
-    text-decoration: underline;
-}
-
 footer {
     text-align: center;
     position: absolute;
@@ -137,6 +129,7 @@ footer {
         width: 50%;
         font-size: 16px;
     }
+
     footer {
         font-size: 10px;
     }
