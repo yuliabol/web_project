@@ -1,0 +1,59 @@
+:root{
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu_new {
+    margin-left: 5%;
+} 
+.menu_new ul {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+}
+
+
+
+.menu_new li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.menu_new a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu_new a:hover {
+    background-color: #ddd;
+}
+
+.tour {
+    background: rgba(70, 7, 42, 0.21);
+}
+
+.home {
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.home:hover {
+    color: rgb(38, 15, 15);
+    text-decoration: underline;
+}
+
+.footerr {
+    text-align: center;
+    background: rgba(70, 7, 42, 0.08);
+    bottom: 0;
+    font-size: 0.8em;
+}
