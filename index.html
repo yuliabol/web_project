@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Чат</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #chatContainer {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        #messages {
+            list-style-type: none;
+            padding: 0;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .myMessage {
+            background-color: #c7efff;
+            text-align: right;
+        }
+
+        .otherMessage {
+            background-color: #ffffff;
+            text-align: left;
+        }
+
+        #messageInput {
+            width: calc(100% - 100px);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            margin-top: 1.5%;
+            background-color: #3e9abe;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #55a7c8;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chatContainer">
+        <h1>WebSocket Чат</h1>
+        <ul id="messages"></ul>
+        <input id="messageInput" type="text" placeholder="Введіть повідомлення">
+        <button onclick="sendMessage()">Надіслати</button>
+    </div>
+
+    <script>
+        const ws = new WebSocket('ws://localhost:8080');
+        const clientId = Math.random().toString(36).substr(2, 9);  // Унікальний ID для кожного клієнта
+
+        ws.onmessage = function (event) {
+            event.data.text().then(text => {
+                const parsedMessage = JSON.parse(text);
+                const messages = document.getElementById('messages');
+                const message = document.createElement('li');
+
+                if (parsedMessage.clientId === clientId) {
+                    message.classList.add('message', 'myMessage');
+                } else {
+                    message.classList.add('message', 'otherMessage');
+                }
+
+                message.textContent = parsedMessage.text;
+                messages.appendChild(message);
+                messages.scrollTop = messages.scrollHeight; // Прокрутка донизу
+            });
+        };
+
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const text = input.value;
+
+            const message = {
+                clientId: clientId,
+                text: text
+            };
+
+            ws.send(JSON.stringify(message));
+
+            input.value = '';
+        }
+    </script>
+</body>
+
+</html>
